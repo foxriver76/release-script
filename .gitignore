@@ -20,7 +20,6 @@ package-lock.json
 *.tgz
 
 # Compiled source files
-**/build
 **/*.tsbuildinfo
 *.map
 
