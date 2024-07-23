@@ -90,6 +90,9 @@ class CLI {
         this.log(`$ ${command}`);
     }
     clearLines(lines) {
+        if (!process.stdout.isTTY) {
+            return;
+        }
         process.stdout.moveCursor(0, -lines);
         process.stdout.clearScreenDown();
     }
